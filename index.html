@@ -1,7 +1,47 @@
 <!DOCTYPE HTML>
-<html>
-    <body>
-        <H>Top Github Repos and Users</H>
-        <script src=App.js></script>
-    </body>
+
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>BitSight Coding Challenge</title>
+    <link rel='stylesheet' href='App.css'>
+  </head>
+  <body>
+    <div class='center'>
+      <H1>Top Github Repos and Users</H1>
+    </div>
+    <div class='center'>
+      <button type='button' id='hot_repo' onclick="queryGitHubAPI(repoQuery, 'repo_query')">Download Top Repos</button>
+      <table id='top_5_repos' class='center'>
+        <thead>
+          <tr>
+            <th>Avatar</th>
+            <th>Repo Name</th>
+            <th>Stars</th>
+            <th>Description</th>
+            <th>Created</th>
+            <th>ID</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class='center'>
+      <button type='button' id='prolific_users' onclick="queryGitHubAPI(userQuery, 'user_query')"> Download Top Users</button>
+      <table id='top_5_users' class='center'>
+        <thead>
+          <tr>
+            <th>Avatar</th>
+            <th>User Name</th>
+            <th>Followers</th>
+            <th>Join Date</th>
+            <th>ID</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </body>
+  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js'></script>
+  <script type='text/javascript' src=App.js></script>
 </html>

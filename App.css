@@ -1,0 +1,35 @@
+table, th, td{
+  font-family: 'Orienta', sans-serif;
+  text-align: left;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+table {
+  width: 75%
+}
+
+thead {
+  background-color: DodgerBlue;
+  color: white;
+  visibility: hidden;
+}
+
+div, button {
+  margin: 20px;
+}
+
+h1 {
+  font-family: 'Orienta', sans-serif;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  margin: auto;
+  width: 75%;
+  text-align: center;
+}
